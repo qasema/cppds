@@ -35,3 +35,72 @@ The following is an example of C++ code that writes to the console:
       cout << "Algorithms and Data Structures!" << endl;
       return  0;
   }
+
+  
+
+.. activecode:: cpp_units_1
+    :language: cpp
+    :autograde: unittest
+
+    Write a function to compute the sum of num1 and num2
+    ~~~~
+
+    #include <iostream>
+    using namespace std;
+
+    int Sum(int num1, int num2 ) {
+        //return 
+    }
+
+
+    ====
+
+    #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
+    #include <catch.hpp>
+
+    TEST_CASE("Failed test cases") {
+    REQUIRE( Sum(1,4) == 5 );
+    REQUIRE( Sum(2,4) == 6 );
+    REQUIRE( Sum(0,0) == 0 );
+    REQUIRE( Sum(5,0) == 5 );
+    REQUIRE( Sum(-5,3) == -2 );
+    REQUIRE( Sum(100,120) == 220 );
+    
+    }
+
+
+
+.. activecode:: cpp_units_2
+    :language: cpp
+    :autograde: unittest
+
+    Write a function that removes all the vowels from myword
+    ~~~~
+
+    #include <iostream>
+    using namespace std;
+
+    string vowels(string myword){
+
+
+    }
+
+
+    ====
+
+    #define CATCH_CONFIG_MAIN // This tells Catch to provide a main() - only do   this in one cpp file
+    #include <catch.hpp>
+
+    TEST_CASE("Failed test cases") {
+    REQUIRE( vowels("hello") == "hll" );
+    REQUIRE( vowels("eau") == "" );
+    REQUIRE( vowels("myth") == "myth" );
+    REQUIRE( vowels("Welcome") == "Wlcm" );
+    REQUIRE( vowels("books") == "bks" );
+    REQUIRE( vowels("Fall2021") == "fll2021" );
+
+
+    }
+
+
+    
